@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+    img {
+        height: 64px;
+        width:28px
+    }
+
+    h1 {
+        padding: 0;
+        font-size: 18px;
+        margin: 0 0 0 12px;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: transform 300ms;
+        transform-origin: left;
+        transform: scale(1);
+    }
+    .title-hide{
+        display: none;
+    }
+    :global(.title-hide) {
+        transform: scale(0);
+    }
+}
